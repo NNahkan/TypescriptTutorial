@@ -1,19 +1,16 @@
-"use client"
 
-import { useState } from 'react'
+
 import './App.css'
+import DummyComponent from './DummyProps'
+
+
 
 function App() {
-	const [postTitle, setPostTitle] = useState("")
+	const setNumber = () => console.log("works")
 
-	const changeTitle = () => {
-		setPostTitle(35)
-	}
 
 	return (
-		<>
-			<h1 style={{ color: "black", background: "white" }}>x{postTitle}</h1>
-		</>
+		<DummyComponent number={10} setNumber={setNumber} />
 	)
 }
 
