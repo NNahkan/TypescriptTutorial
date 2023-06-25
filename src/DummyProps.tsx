@@ -1,23 +1,23 @@
 import React, { Dispatch, SetStateAction } from 'react'
 
 interface DummyProps {
-  number: number
-  setNumber: Dispatch<SetStateAction<number>>
+	number: number
+	setNumber: Dispatch<SetStateAction<number>>
 }
 
-const DummyComponent:React.FC<DummyProps> = ({ number, setNumber }) => {
+const DummyComponent: React.FC<DummyProps> = ({ number, setNumber }) => {
 
-  return (
-    <>
-      <div>{number}</div>
+	return (
+		<>
+			<div>{number}</div>
 
-      <button
-        onClick={() => setNumber(prev => prev+1)}
-      >
-        ADD
-      </button>
-    </>
-  )
+			<button
+				onClick={() => setNumber((prev) => prev + 1)}
+			>
+				ADD
+			</button>
+		</>
+	)
 
 }
 
