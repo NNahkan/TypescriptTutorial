@@ -15,17 +15,7 @@ const DummyComponent: React.FC<DummyProps> = ({ number, setNumber }) => {
 
 	const [cocktails, setCocktails] = useState<Cocktail[]>([]);
 
-	const updateCocktailProperty = (index: number, property: keyof Cocktail, value: any) => {
-		setCocktails((prevCocktails) => {
-			const updatedCocktails = [...prevCocktails];
-			updatedCocktails[index] = {
-				...updatedCocktails[index],
-				[property]: value,
-			};
-			return updatedCocktails;
-		});
-	};
-
+	
 	const addCocktail = () => {
 		setCocktails((prevCocktails) => [
 			...prevCocktails,
@@ -36,6 +26,18 @@ const DummyComponent: React.FC<DummyProps> = ({ number, setNumber }) => {
 			},
 		]);
 	};
+
+
+	const updateCocktailProperty = (index: number, property: keyof Cocktail, value: any) => {
+		setCocktails((prevCocktails) => {
+			const updatedCocktails = [...prevCocktails];
+			updatedCocktails[index] = {
+				...updatedCocktails[index],
+				[property]: value,
+			};
+			return updatedCocktails;
+		});
+	}; 
 
 
 
