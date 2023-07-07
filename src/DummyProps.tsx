@@ -74,22 +74,22 @@ export default DummyComponent
 /* 
 {
   "cocktails": [
-    {
-      "name": "Mojito",
-      "liquors": {
-        "rum": "2oz",
-        "mint liqueur": "1oz"
-      },
-      "garnish": ["mint leaves", "lime"]
-    },
-    {
-      "name": "Cosmopolitan",
-      "liquors": {
-        "vodka": "2oz",
-        "triple sec": "1oz"
-      },
-      "garnish": ["lime twist"]
-    },
+	 
+	 {
+		"name": "Cosmopolitan",
+		"liquors": {
+		  "vodka": "2oz",
+		  "triple sec": "1oz"
+		},
+		"garnish": ["lime twist"]
+	 },{
+		"name": "Mojito",
+		"liquors": {
+		  "rum": "2oz",
+		  "mint liqueur": "1oz"
+		},
+		"garnish": ["mint leaves", "lime"]
+	 },
 	]
 }
 */
