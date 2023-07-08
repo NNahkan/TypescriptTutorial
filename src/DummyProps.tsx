@@ -72,6 +72,9 @@ const DummyComponent = () => {
 export default DummyComponent
 
 /* 
+Olan alkollerin listesini aldiktan sonra uygulamayi bulup hangi icecekler
+yapabileceklerine baktiktan sonra datayi olusturup onlari mapping ederek listeyi olusturmak.
+Aslinda gercekten kolay sadece baslamam gerekiyor suan icin
 {
   "cocktails": [
 	 
