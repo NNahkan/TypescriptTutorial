@@ -14,6 +14,11 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
 	const [edit, setEdit] = useState<boolean>(false)
 	const [editTodo, setEditTodo] = useState<string>(todo.todo)
 
+
+	const handleDelete = (id: number) => {
+		setTodos(todos.filter((todo) => todo.id !== id))
+	}
+	
 	const handleDone = (id: number) => {
 		setTodos(
 			todos.map((todo) =>
@@ -22,9 +27,7 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
 		);
 	};
 
-	const handleDelete = (id: number) => {
-		setTodos(todos.filter((todo) => todo.id !== id))
-	}
+
 
 	return (
 		<form className='todos__single'>
@@ -38,7 +41,7 @@ const SingleTodo = ({ todo, todos, setTodos }: Props) => {
 					) : (
 						<span className="todos__single--text">{todo.todo}</span>
 					)
-)
+ )
 			}
 
 
