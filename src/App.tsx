@@ -20,7 +20,6 @@ const App: React.FC = () => {
 
 	}
 
-	console.log(todos);
 
 	return (
 		<div className='App' >
