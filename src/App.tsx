@@ -10,14 +10,7 @@ const App: React.FC = () => {
 	const [todos, setTodos] = useState<Array<Todo>>([]);
 	const [CompletedTodos, setCompletedTodos] = useState<Array<Todo>>([]);
 
-	const handleAdd = (e: React.FormEvent) => {
-		e.preventDefault();
-
-		if (todo) {
-			setTodos([...todos, { id: Date.now(), todo, isDone: false }]);
-			setTodo("");
-		}
-	};
+	
 
 	const onDragEnd = (result: DropResult) => {
 		const { destination, source } = result;
@@ -56,6 +49,15 @@ const App: React.FC = () => {
 
 		setCompletedTodos(complete);
 		setTodos(active);
+	};
+
+	const handleAdd = (e: React.FormEvent) => {
+		e.preventDefault();
+
+		if (todo) {
+			setTodos([...todos, { id: Date.now(), todo, isDone: false }]);
+			setTodo("");
+		}
 	};
 
 	return (
